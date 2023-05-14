@@ -1,4 +1,4 @@
-# go-starter-kit
+![](/.github/assets/logo.png)
 
 A starter kit for those interested in learning Go.
 
