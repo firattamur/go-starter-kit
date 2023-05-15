@@ -3,22 +3,15 @@ package main
 import "fmt"
 
 const (
-	a = iota
-	b
-	c
-)
-
-const (
-	d = iota
-	e
-	f
+	a = iota + 2 // iota = 0 + 2 = 2
+	b = iota + 2 // iota = 1 + 2 = 3
+	c = iota + 3 // iota = 2 + 3 = 5
+	d = iota + 4 // iota = 3 + 4 = 7
+	e = iota + 7 // iota = 4 + 7 = 11
 )
 
 func main() {
 
-	const g := 10
-
-	fmt.Println(a, b, c)
-	fmt.Println(d, e, f)
+	fmt.Println(a, b, c, d, e)
 
 }

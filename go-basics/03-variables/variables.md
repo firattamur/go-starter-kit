@@ -49,3 +49,38 @@
   ```go
     a, b := 1, 2
   ```
+
+## 🚀 Coding Challenge:
+
+Your task is to write a Go program named `variables.go` which does the following:
+
+1. Declare an `int` variable named `a` and assign the value 10 to it.
+2. Declare an `int` variable named `b` and assign the value 20 to it.
+3. Use parallel assignment to swap the values of `a` and `b`.
+4. Print the values of `a` and `b` after the swap.
+
+You can start with the following code skeleton:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+// Your code here
+}
+```
+
+To run your program, use this command:
+
+```bash
+$ go run variables.go
+```
+
+The expected output of your program should be:
+
+```bash
+20 10
+```
+
+This challenge will help you practice declaring variables, assigning values, and using parallel assignment in Go. Good luck! 🍀

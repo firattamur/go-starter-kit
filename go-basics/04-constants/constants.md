@@ -87,3 +87,39 @@
     0 1 2
     0 1 2
     ```
+
+## 🚀 Coding Challenge:
+
+Your task is to write a Go program named `constants.go` which does the following:
+
+1. Declare a set of constants for the first 5 prime numbers, using the `iota` identifier.
+
+2. Print each of these constants.
+
+You can start with the following code skeleton:
+
+```go
+package main
+
+import "fmt"
+
+// Your constants here
+
+func main() {
+// Your code here
+}
+```
+
+To run your program, use this command:
+
+```bash
+$ go run constants.go
+```
+
+The expected output of your program should be:
+
+```bash
+2 3 5 7 11
+```
+
+This challenge will help you practice declaring constants and using the `iota` identifier in Go. Good luck! 🍀

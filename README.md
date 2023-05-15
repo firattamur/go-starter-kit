@@ -1,6 +1,8 @@
 ![](/.github/assets/logo.png)
 
-A starter kit for those interested in learning Go.
+A starter kit for those interested in learning Go. This repository contains a collection of resources, mini-projects, and code examples to help you get up to speed with Go.
+
+Inspired by [gobyexample.com](https://gobyexample.com/).
 
 ## Table of Contents
 
@@ -28,6 +30,8 @@ Dive into Go syntax with hands-on examples. Each subdirectory in this section co
 
 - [01 - Hello World](./go-basics/01-hello-world/hello-world.md)
 - [02 - Data Types](./go-basics/02-data-types/data-types.md)
+- [03 - Variables](./go-basics/03-variables/variables.md)
+- [04 - Constants](./go-basics/04-constants/constants.md)
 
 ## Intermediate Go
 

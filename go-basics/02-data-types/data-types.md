@@ -63,30 +63,36 @@
 
 - Short variable declarations can only be used inside functions.
 
-- Let's write a complete program that uses all of the data types we've covered so far:
+## 🚀 Coding Challenge:
 
-  ```go
-  package main
+Your task is to write a Go program named `types.go` which does the following:
 
-  import "fmt"
+1. Declare a `string` variable named `hello` and assign the value "Hello, Go!" to it.
+2. Declare an `int` variable named `year` and assign the current year to it.
+3. Print both variables using the `fmt.Println()` function.
 
-  func main() {
-    var a bool = true
-    var b string = "Hello World"
-    var c int = 42
-    var d float64 = 3.14
-    var e complex128 = 3 + 5i
-    var f byte = 'a'
-    var g rune = '☺'
+You can start with the following code skeleton:
 
-    fmt.Println(a, b, c, d, e, f, g)
-  }
-  ```
+```go
+package main
 
-- The output of this program is:
+import "fmt"
 
-  ```bash
-  $ go run data-types.go
+func main() {
+// Your code here
+}
+```
 
-  true Hello World 42 3.14 (3+5i) 97 9786
-  ```
+To run your program, use this command:
+
+```bash
+$ go run types.go
+```
+
+The expected output of your program should be:
+
+```bash
+Hello, Go! 2023
+```
+
+This challenge will help you practice declaring variables, assigning values, and printing values in Go. Good luck! 🍀

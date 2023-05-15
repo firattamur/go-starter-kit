@@ -41,3 +41,31 @@ fmt.Println("Hello World!")
 ```
 
 Finally, we call a function called `Println` from the `fmt` package. Notice that we access the function using dot notation. This is called a qualified identifier in Go.
+
+## 🚀 Coding Challenge:
+
+Your task is to create a Go program that prints "Hello, Go!" instead of "Hello, World!". You should save this program as `hello_go.go` and run it using the `go run` command. Here is a skeleton of the code to get you started:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+// Your code here
+}
+```
+
+After you have finished writing your code, you can run it with the following command:
+
+```bash
+$ go run hello_go.go
+```
+
+Your program should output:
+
+```bash
+Hello, Go!
+```
+
+The goal here is to practice using the `fmt` package to print messages to the console. Good luck!

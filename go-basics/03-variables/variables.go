@@ -4,15 +4,11 @@ import "fmt"
 
 func main() {
 
-	var a int = 42
-	var b bool = false
+	var a int = 10
+	var b int = 20
 
-	c := "Hello World"
+	a, b = b, a
 
-	var d, e = 10, 12
-
-	var f int
-
-	fmt.Println(a, b, c, d, e, f)
+	fmt.Println(a, b)
 
 }
