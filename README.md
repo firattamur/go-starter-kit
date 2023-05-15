@@ -26,6 +26,9 @@ Get Go installed on your machine and set up your development environment.
 
 Dive into Go syntax with hands-on examples. Each subdirectory in this section contains a README with explanations and code examples for a particular topic, such as variables, functions, or control structures.
 
+- [01 - Hello World](./go-basics/01-hello-world/hello-world.md)
+- [02 - Data Types](./go-basics/02-data-types/data-types.md)
+
 ## Intermediate Go
 
 Explore more complex Go topics like interfaces, goroutines, and error handling. Each topic has its own subdirectory with a README and code examples.
