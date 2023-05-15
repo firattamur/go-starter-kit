@@ -1,6 +1,6 @@
 ![](/.github/assets/logo.png)
 
-A starter kit for those interested in learning Go. This repository contains a collection of resources, mini-projects, and code examples to help you get up to speed with Go.
+A starter kit for those interested in learning Go. This repository contains a collection of resources, mini-projects, and code examples that I have created while learning Go. I hope you find it useful!
 
 ## Table of Contents
 
@@ -18,9 +18,129 @@ A starter kit for those interested in learning Go. This repository contains a co
 
 Learn about the history of Go, its benefits, and why you might want to use it.
 
+<details>
+    <summary>What is Go?</summary>
+
+- Go is an open-source programming language announced by Google in 2009.
+
+- Go is statically typed, compiled, and syntactically similar to C.
+
+- Go is a general-purpose programming language designed for building simple, efficient, and reliable software.
+
+- Go is a compiled language. This means that the Go source code is translated into machine code that runs directly on the processor.
+
+- Go is a statically typed language. This means that variables always have a specific type and that type cannot change.
+
+- Go is also a strongly typed language, which means that variables can only be coerced to another type with an explicit conversion.
+
+- Go is a garbage-collected language. This means that Go has a built-in garbage collector that automatically frees memory that is no longer being used.
+
+- Go has built-in concurrency support. This means that Go has primitives for writing concurrent programs.
+
+- Go has a built-in testing framework. This means that Go has a built-in testing framework that makes it easy to write and execute tests.
+
+- Go has a built-in documentation system. This means that Go has a built-in documentation system that makes it easy to write and generate documentation.
+
+- Go has a built-in formatting tool. This means that Go has a built-in formatting tool that makes it easy to format Go source code.
+
+- Go has a built-in dependency management tool. This means that Go has a built-in dependency management tool that makes it easy to manage dependencies.
+
+</details>
+
+<details>
+    <summary>Why use Go?</summary>
+
+- Go is simple, fast, and efficient.
+
+- Go has a simple syntax that is easy to learn.
+
+- Go has a fast compiler that compiles Go source code into machine code in seconds.
+
+- Go has a fast runtime that runs compiled Go programs in milliseconds.
+
+- Go has a simple concurrency model that makes it easy to write concurrent programs.
+
+- Go has a built-in testing framework that makes it easy to write and execute tests.
+
+- A massive ecosystem of open-source libraries and tools.
+
+- Go is used by companies like Google, Facebook, Twitter, Uber, Dropbox, and many others.
+
+- Go is used for writing web servers, command-line tools, and other types of software.
+
+</details>
+
 ## 2. Getting Started:
 
 Get Go installed on your machine and set up your development environment.
+
+<details>
+    <summary>Installing Go:</summary>
+
+- To install Go on your machine, follow the instructions on the [official Go website](https://golang.org/doc/install).
+
+- To verify that Go is installed correctly, run the following command:
+
+  ```bash
+  $ go version
+  ```
+
+  - Output:
+
+    ```bash
+    go version go1.20.3 darwin/amd64
+    ```
+
+- To verify that Go is working correctly, create a file named `hello.go` with the following contents:
+
+  ```go
+  package main
+
+  import "fmt"
+
+  func main() {
+      fmt.Println("Hello, Go!")
+  }
+  ```
+
+- To run this program, use the `go run` command:
+
+  ```bash
+  $ go run hello.go
+  ```
+
+  - Output:
+
+    ```bash
+    Hello, Go!
+    ```
+
+- To compile this program, use the `go build` command:
+
+  ```bash
+  $ go build hello.go
+  ```
+
+  - This will create an executable file named `hello`:
+
+    ```bash
+    $ ls
+    hello hello.go
+    ```
+
+- To run the executable file, use the following command:
+
+  ```bash
+  $ ./hello
+  ```
+
+  - Output:
+
+    ```bash
+    Hello, Go!
+    ```
+
+</details>
 
 ## 3. Go Basics:
 
