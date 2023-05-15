@@ -36,7 +36,7 @@
     var a = [...]int{0: 1, 1: 2, 2: 3, 3: 4, 4: 5}
   ```
 
-- Arrays initialized with default value of 0, if not specified:
+- Arrays initialized with a default value of 0, if not specified:
 
   ```go
     var a = [5]int{1, 2, 3}

@@ -1116,6 +1116,422 @@ This challenge will help you practice using arrays in Go. Good luck! 🍀
 
 </details>
 
+<details>
+    <summary>09 - Slices in Go:</summary>
+
+- Slices are a built-in data structure in Go.
+
+- Slices are similar to arrays, but they are dynamic.
+
+- Slices are zero-indexed.
+
+- Slices can be initialized using the `make` keyword:
+
+  ```go
+    var a = make([]int, 5)
+  ```
+
+- To get the length of a slice, we can use the built-in `len` function:
+
+  ```go
+    var a = make([]int, 5)
+    fmt.Println(len(a))
+  ```
+
+  - Output:
+
+    ```bash
+    5
+    ```
+
+- To get the capacity of a slice, we can use the built-in `cap` function:
+
+  ```go
+      var a = make([]int, 5)
+      fmt.Println(cap(a))
+  ```
+
+  - Output:
+
+    ```bash
+    5
+    ```
+
+- We can also declare multi-dimensional slices:
+
+  ```go
+      var a = make([][]int, 5)
+  ```
+
+- We can also declare slices using the `:=` operator:
+
+  ```go
+    a := []int{1, 2, 3, 4, 5}
+  ```
+
+- Additional functions for slices:
+
+  - `append`:
+
+    ```go
+      var a = []int{1, 2, 3, 4, 5}
+      a = append(a, 6)
+      fmt.Println(a)
+    ```
+
+    - Output:
+
+      ```bash
+      [1 2 3 4 5 6]
+      ```
+
+  - `copy`:
+
+    ```go
+      var a = []int{1, 2, 3, 4, 5}
+      var b = make([]int, 5)
+      copy(b, a)
+      fmt.Println(b)
+    ```
+
+    - Output:
+
+      ```bash
+      [1 2 3 4 5]
+      ```
+
+  - `range`:
+
+    ```go
+      var a = []int{1, 2, 3, 4, 5}
+      for i, v := range a {
+          fmt.Println(i, v)
+      }
+    ```
+
+    - Output:
+
+      ```bash
+      0 1
+      1 2
+      2 3
+      3 4
+      4 5
+      ```
+
+- To get a slice of a slice, we can use the following syntax:
+
+  ```go
+    var a = []int{1, 2, 3, 4, 5}
+    fmt.Println(a[1:3])
+  ```
+
+  - Output:
+
+    ```bash
+    [2 3]
+    ```
+
+- The cap and length of a slice can be different:
+
+  ```go
+    var a = make([]int, 5, 10)
+    fmt.Println(len(a))
+    fmt.Println(cap(a))
+  ```
+
+  - Output:
+
+    ```bash
+    5
+    10
+    ```
+
+## 🚀 Coding Challenge:
+
+Your task is to write a Go program named `slices.go` which does the following:
+
+1. Declare a slice of 5 `int` elements named `a` and assign the values 1, 2, 3, 4, 5 to it.
+
+2. Print the slice.
+
+3. Print the length of the slice.
+
+4. Print the capacity of the slice.
+
+5. Use the `append` function to add the value 6 to the slice.
+
+6. Print the slice.
+
+7. Use the `copy` function to copy the slice to a new slice named `c`.
+
+8. Print the new slice.
+
+9. Use a `for` loop to iterate over the slice and print each element.
+
+You can start with the following code skeleton:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    // Your code here
+}
+```
+
+To run your program, use this command:
+
+```bash
+$ go run slices.go
+```
+
+The expected output of your program should be:
+
+```bash
+[1 2 3 4 5]
+5
+5
+[1 2 3 4 5 6]
+[1 2 3 4 5]
+0 1
+1 2
+2 3
+3 4
+4 5
+5 6
+```
+
+This challenge will help you practice using slices in Go. Good luck! 🍀
+
+</details>
+
+<details>
+    <summary>10 - Maps in Go:</summary>
+
+- Maps are unordered collections of key-value pairs.
+
+- Maps are declared using brackets:
+
+  ```go
+    var m map[string]int
+  ```
+
+- Maps are initialized using the `make` keyword:
+
+  ```go
+    var m = make(map[string]int)
+  ```
+
+- Maps can also be initialized using the `:=` operator:
+
+  ```go
+    m := map[string]int{"foo": 42}
+  ```
+
+- Maps can also be initialized using the `new` keyword:
+
+  ```go
+      var m = new(map[string]int)
+  ```
+
+- Maps can be accessed using brackets:
+
+  ```go
+    m := map[string]int{"foo": 42}
+    fmt.Println(m["foo"])
+  ```
+
+  - Output:
+
+    ```bash
+    42
+    ```
+
+- Maps can be updated using brackets:
+
+  ```go
+    m := map[string]int{"foo": 42}
+    m["foo"] = 27
+    fmt.Println(m["foo"])
+  ```
+
+  - Output:
+
+    ```bash
+    27
+    ```
+
+- Maps can be deleted using the `delete` keyword:
+
+  ```go
+      m := map[string]int{"foo": 42}
+      delete(m, "foo")
+      fmt.Println(m["foo"])
+  ```
+
+  - Output:
+
+    ```bash
+    0
+    ```
+
+- Maps can be iterated using the `range` keyword:
+
+  ```go
+    m := map[string]int{"foo": 42, "bar": 27}
+    for k, v := range m {
+        fmt.Println(k, v)
+    }
+  ```
+
+  - Output:
+
+    ```bash
+    foo 42
+    bar 27
+    ```
+
+- Maps' keys can be iterated using the `range` keyword:
+
+  ```go
+    m := map[string]int{"foo": 42, "bar": 27}
+    for k := range m {
+        fmt.Println(k)
+    }
+  ```
+
+  - Output:
+
+    ```bash
+    foo
+    bar
+    ```
+
+- The length of a map can be obtained using the `len` function:
+
+  ```go
+    m := map[string]int{"foo": 42, "bar": 27}
+    fmt.Println(len(m))
+  ```
+
+  - Output:
+
+    ```bash
+    2
+    ```
+
+- If a key does not exist in a map, the value returned is the zero value of the type:
+
+  ```go
+    m := map[string]int{"foo": 42, "bar": 27}
+    fmt.Println(m["baz"])
+  ```
+
+  - Output:
+
+    ```bash
+    0
+    ```
+
+- To check if a key exists in a map, we can use the `ok` idiom:
+
+  ```go
+    m := map[string]int{"foo": 42, "bar": 27}
+    if v, ok := m["foo"]; ok {
+        fmt.Println(v)
+    }
+  ```
+
+  - Output:
+
+    ```bash
+    42
+    ```
+
+- Maps are passed by reference:
+
+  ```go
+      m := map[string]int{"foo": 42, "bar": 27}
+      fmt.Println(m)
+      updateMap(m)
+      fmt.Println(m)
+
+    func updateMap(m map[string]int) {
+        m["foo"] = 27
+    }
+  ```
+
+  - Output:
+
+    ```bash
+    map[bar:27 foo:42]
+    map[bar:27 foo:27]
+    ```
+
+## 🚀 Coding Challenge:
+
+Your task is to write a Go program named `maps.go` which does the following:
+
+1. Declare a map named `m` that maps `string` keys to `int` values.
+
+2. Initialize `m` with the following key-value pairs:
+
+   - "foo" -> 42
+   - "bar" -> 27
+
+3. Print the map.
+
+4. Print the length of the map.
+
+5. Print key, value pairs of the map using the `range` keyword.
+
+6. Delete the key "foo" from the map.
+
+7. Print the map.
+
+8. Print the length of the map.
+
+9. Print the value of the key "foo" from the map.
+
+10. Print `bar, 27` if the key "bar" exists in the map.
+
+You can start with the following code skeleton:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    // Your code here
+}
+```
+
+To run your program, use this command:
+
+```bash
+$ go run maps.go
+```
+
+The expected output of your program should be:
+
+```bash
+map[bar:27 foo:42]
+2
+bar 27
+foo 42
+map[bar:27]
+1
+0
+bar, 27
+```
+
+This challenge will help you practice using maps in Go. Good luck! 🍀
+
+</details>
+
 ## 4. Go Intermediate:
 
 Explore more complex Go topics like interfaces, goroutines, and error handling. Each topic has its own subdirectory with a README and code examples.
