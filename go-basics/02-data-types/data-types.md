@@ -1,4 +1,4 @@
-## 02 - Data Types in Go
+## 02 - Data Types in Go:
 
 - Go is a statically typed language. This means that variables always have a specific type and that type cannot change.
 

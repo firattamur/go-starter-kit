@@ -1,4 +1,4 @@
-## 03 - Variables in Go
+## 03 - Variables in Go:
 
 - Variables are used to store values in memory.
 

@@ -1,4 +1,4 @@
-## 01 - Hello World in Go!
+## 01 - Hello World in Go:
 
 As is tradition, we'll start with a "Hello World" program.
 

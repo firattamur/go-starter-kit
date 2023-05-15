@@ -1,4 +1,4 @@
-## 05 - For Loops in Go
+## 05 - For Loops in Go:
 
 - Go has only one looping construct, the `for` loop.
 

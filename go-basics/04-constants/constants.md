@@ -1,4 +1,4 @@
-## 04 - Constants
+## 04 - Constants:
 
 - Constants are declared like variables, but with the const keyword.
 
